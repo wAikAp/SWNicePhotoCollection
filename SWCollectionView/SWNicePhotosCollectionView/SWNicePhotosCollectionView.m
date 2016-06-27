@@ -10,21 +10,18 @@
 #import "SWCollectionViewImageCell.h"
 
 //第三方库
-#import "MJPhoto.h"
-#import "MJPhotoBrowser.h"
 #import "Masonry.h"
 
 #import "SWPhoto.h"
 #import "SWPhotoBrowser.h"
-#import "SWNicePhotosCollectionView.h"
 
-#define WIDTH [UIScreen mainScreen].bounds.size.width
-#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SWCWIDTH [UIScreen mainScreen].bounds.size.width
+#define SWCHEIGHT [UIScreen mainScreen].bounds.size.height
 
 CGFloat cellMargin = 10;//cell间距
 NSInteger maxColmun = 3;//最大行/列数
 
-#define cellWh (WIDTH - 2 * cellMargin - (maxColmun - 1) * cellMargin )/ maxColmun // 图片宽高
+#define cellWh (SWCWIDTH - 2 * cellMargin - (maxColmun - 1) * cellMargin )/ maxColmun // 图片宽高
 #define pictureSize CGSizeMake(cellWh, cellWh);//size
 
 
@@ -59,7 +56,7 @@ NSInteger maxColmun = 3;//最大行/列数
         self.alwaysBounceVertical = NO;
         self.alwaysBounceHorizontal = NO;
         self.contentSize  = self.frame.size;
-        [self registerClass:[SWCollectionViewImageCell class] forCellWithReuseIdentifier:@"collCell"];
+        [self registerClass:[SWCollectionViewImageCell class] forCellWithReuseIdentifier:@"SWCollCell"];
         
     }
     return self;
@@ -90,7 +87,7 @@ NSInteger maxColmun = 3;//最大行/列数
     
     if (count == 1) {
         
-        CGSize size = CGSizeMake(WIDTH / 2 , HEIGHT / 5);
+        CGSize size = CGSizeMake(SWCWIDTH / 2 , SWCHEIGHT / 5);
         
         self.flowLayOut.itemSize = size;
         self.flowLayOut.minimumLineSpacing = 0;
@@ -129,7 +126,7 @@ NSInteger maxColmun = 3;//最大行/列数
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    SWCollectionViewImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collCell" forIndexPath:indexPath];
+    SWCollectionViewImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SWCollCell" forIndexPath:indexPath];
     cell.image = self.imageArray[indexPath.row];
     return cell;
 }
@@ -137,7 +134,6 @@ NSInteger maxColmun = 3;//最大行/列数
 #pragma mark - delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//
     NSMutableArray *photoArr = [NSMutableArray array];
 
     for (int i = 0; i < self.imageArray.count; ++i) {
@@ -153,17 +149,16 @@ NSInteger maxColmun = 3;//最大行/列数
         [photoArr addObject:photo];
     }
     //图片浏览器
-    SWPhotoBrowser *pbrowser = [[SWPhotoBrowser alloc]init];
-    pbrowser.photos = photoArr;
-    pbrowser.currentPhotoIndex = indexPath.item;
-    pbrowser.showItemType = typePageControl;//底部显示第几张的类型
-    [pbrowser show];//显示完后 变成以显示
-//    SWPhotoBrowserViewController *browserVc =[[SWPhotoBrowserViewController alloc]init];
-//    browserVc.photos = photoArr;
-//    browserVc.currentPhotoIndex = indexPath.item;
-//    browserVc.showItemType = typePageControl;
-//    [browserVc show];
-//    self pre
+    SWPhotoBrowser *browser = [[SWPhotoBrowser alloc]init];
+    browser.photos = photoArr;
+    browser.currentPhotoIndex = indexPath.item;
+    if (self.browShowItemPageNumType) {
+        browser.showItemType = self.browShowItemPageNumType;
+    }else{
+        browser.showItemType = typePageControl;//底部显示第几张的类型
+    }
+    [browser show];//显示完后 变成以显示
+
     
 }
 

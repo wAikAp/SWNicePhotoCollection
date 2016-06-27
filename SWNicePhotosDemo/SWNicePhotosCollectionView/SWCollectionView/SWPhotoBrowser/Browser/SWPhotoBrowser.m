@@ -37,7 +37,6 @@ static NSString *cellID = @"SWBrowserCell";
 
 @property (nonatomic, strong) UIPageControl *pageControl;
 
-@property (nonatomic, strong) SWPhotoBrowserViewController *handleVcontroller;
 
 @end
 

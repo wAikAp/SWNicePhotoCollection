@@ -8,10 +8,10 @@
 
 #import "SecViewController.h"
 #import "SWNicePhotosCollectionView.h"
-#import "Masonry.h"
 
-#define WIDTH [UIScreen mainScreen].bounds.size.width
-#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#import "UIView+SWUtility.h"
+
+#import "Masonry.h"
 
 @interface SecViewController ()
 
@@ -28,22 +28,16 @@
         UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"pic%d",i]];
         [imageArr addObject:image];
     }
-    //红色按钮
-    UIButton *bottomBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    bottomBtn.backgroundColor = [UIColor redColor];
-    [self.view addSubview:bottomBtn];
-    
     
     //九宫格View
     SWNicePhotosCollectionView *nicePhoto = [SWNicePhotosCollectionView nicePhotoWithImageArray:imageArr];
     [self.view addSubview:nicePhoto];
     
-    //按钮约束
-    [bottomBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(self.view);
-        make.height.mas_equalTo(50);
-        make.top.mas_equalTo(nicePhoto.mas_bottom);
+    [nicePhoto mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.view).offset(30);
+        make.leading.mas_equalTo(self.view).offset(10);
     }];
+    
     
 }
 

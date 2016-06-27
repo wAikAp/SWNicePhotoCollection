@@ -7,6 +7,8 @@
 //
 
 #import "SWCollectionViewImageCell.h"
+//用到了第三方
+#import "Masonry.h"
 
 @interface SWCollectionViewImageCell ()
 

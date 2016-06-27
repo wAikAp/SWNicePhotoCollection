@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SWPhotoBrowserViewController.h"
 
 /**
  *  显示label 还是pageControl 默认pageControl
@@ -33,7 +32,9 @@ typedef NS_OPTIONS(NSInteger, browShowItemPageNumType) {
 @property (nonatomic, strong) NSArray *photos;
 // 当前展示的图片索引
 @property (nonatomic, assign) NSUInteger currentPhotoIndex;
-
+/**
+ *  下标样式
+ */
 @property (nonatomic, assign) browShowItemPageNumType showItemType;
 
 -(void)show;

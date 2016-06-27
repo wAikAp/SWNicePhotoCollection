@@ -29,7 +29,10 @@
 @property (nonatomic, strong) NSArray *imageArray;
 
 
-
+/**
+ *  图片浏览器的下标类型 1为数字label 2为pageControl 默认pageControl
+ */
+@property (nonatomic, assign) NSInteger browShowItemPageNumType;
 
 
 @end

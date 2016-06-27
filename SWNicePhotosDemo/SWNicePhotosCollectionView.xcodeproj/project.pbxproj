@@ -20,16 +20,16 @@
 		3C2D9F8A1D055D4D000EA752 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D9F7D1D055D4D000EA752 /* NSArray+MASAdditions.m */; };
 		3C2D9F8B1D055D4D000EA752 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D9F801D055D4D000EA752 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		3C2D9F8C1D055D4D000EA752 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D9F821D055D4D000EA752 /* View+MASAdditions.m */; };
-		3C2D9F931D05649F000EA752 /* SWCollectionViewImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D9F901D05649F000EA752 /* SWCollectionViewImageCell.m */; };
-		3C2D9F941D05649F000EA752 /* SWNicePhotosCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D9F921D05649F000EA752 /* SWNicePhotosCollectionView.m */; };
 		3C2D9F9E1D0567E4000EA752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D9F971D0567E4000EA752 /* AppDelegate.m */; };
 		3C2D9F9F1D0567E4000EA752 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D9F9A1D0567E4000EA752 /* SecViewController.m */; };
-		3C751E071D193D6400D43F21 /* UIView+SWUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C751E061D193D6400D43F21 /* UIView+SWUtility.m */; };
-		3C8E84451D1B7FFB0012CCB5 /* SWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E84441D1B7FFB0012CCB5 /* SWImageView.m */; };
-		3C9D10B71D20CC08009F6321 /* UIImageView+imageViewHands.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D10B61D20CC08009F6321 /* UIImageView+imageViewHands.m */; };
-		3CDF35011D0D502E001B171C /* SWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF35001D0D502E001B171C /* SWPhotoBrowser.m */; };
-		3CDF35041D0D527E001B171C /* SWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF35031D0D527E001B171C /* SWPhoto.m */; };
-		3CDF350A1D0D69DE001B171C /* SWBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF35091D0D69DE001B171C /* SWBrowserCell.m */; };
+		3C689F561D21673700D9D890 /* SWCollectionViewImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C689F421D21673700D9D890 /* SWCollectionViewImageCell.m */; };
+		3C689F571D21673700D9D890 /* SWNicePhotosCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C689F441D21673700D9D890 /* SWNicePhotosCollectionView.m */; };
+		3C689F581D21673700D9D890 /* SWBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C689F481D21673700D9D890 /* SWBrowserCell.m */; };
+		3C689F591D21673700D9D890 /* SWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C689F4A1D21673700D9D890 /* SWPhotoBrowser.m */; };
+		3C689F5A1D21673700D9D890 /* SWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C689F4D1D21673700D9D890 /* SWPhoto.m */; };
+		3C689F5B1D21673700D9D890 /* UIView+SWUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C689F501D21673700D9D890 /* UIView+SWUtility.m */; };
+		3C689F5C1D21673700D9D890 /* SWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C689F531D21673700D9D890 /* SWImageView.m */; };
+		3C689F5D1D21673700D9D890 /* UIImageView+imageViewHands.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C689F551D21673700D9D890 /* UIImageView+imageViewHands.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,26 +62,26 @@
 		3C2D9F811D055D4D000EA752 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		3C2D9F821D055D4D000EA752 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		3C2D9F831D055D4D000EA752 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		3C2D9F8F1D05649F000EA752 /* SWCollectionViewImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCollectionViewImageCell.h; sourceTree = "<group>"; };
-		3C2D9F901D05649F000EA752 /* SWCollectionViewImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCollectionViewImageCell.m; sourceTree = "<group>"; };
-		3C2D9F911D05649F000EA752 /* SWNicePhotosCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWNicePhotosCollectionView.h; sourceTree = "<group>"; };
-		3C2D9F921D05649F000EA752 /* SWNicePhotosCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWNicePhotosCollectionView.m; sourceTree = "<group>"; };
 		3C2D9F961D0567E4000EA752 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C2D9F971D0567E4000EA752 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3C2D9F991D0567E4000EA752 /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
 		3C2D9F9A1D0567E4000EA752 /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
-		3C751E051D193D6400D43F21 /* UIView+SWUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SWUtility.h"; sourceTree = "<group>"; };
-		3C751E061D193D6400D43F21 /* UIView+SWUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SWUtility.m"; sourceTree = "<group>"; };
-		3C8E84431D1B7FFB0012CCB5 /* SWImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWImageView.h; sourceTree = "<group>"; };
-		3C8E84441D1B7FFB0012CCB5 /* SWImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWImageView.m; sourceTree = "<group>"; };
-		3C9D10B51D20CC08009F6321 /* UIImageView+imageViewHands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+imageViewHands.h"; sourceTree = "<group>"; };
-		3C9D10B61D20CC08009F6321 /* UIImageView+imageViewHands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+imageViewHands.m"; sourceTree = "<group>"; };
-		3CDF34FF1D0D502E001B171C /* SWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWPhotoBrowser.h; sourceTree = "<group>"; };
-		3CDF35001D0D502E001B171C /* SWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWPhotoBrowser.m; sourceTree = "<group>"; };
-		3CDF35021D0D527E001B171C /* SWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWPhoto.h; sourceTree = "<group>"; };
-		3CDF35031D0D527E001B171C /* SWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWPhoto.m; sourceTree = "<group>"; };
-		3CDF35081D0D69DE001B171C /* SWBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBrowserCell.h; sourceTree = "<group>"; };
-		3CDF35091D0D69DE001B171C /* SWBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBrowserCell.m; sourceTree = "<group>"; };
+		3C689F411D21673700D9D890 /* SWCollectionViewImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCollectionViewImageCell.h; sourceTree = "<group>"; };
+		3C689F421D21673700D9D890 /* SWCollectionViewImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCollectionViewImageCell.m; sourceTree = "<group>"; };
+		3C689F431D21673700D9D890 /* SWNicePhotosCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWNicePhotosCollectionView.h; sourceTree = "<group>"; };
+		3C689F441D21673700D9D890 /* SWNicePhotosCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWNicePhotosCollectionView.m; sourceTree = "<group>"; };
+		3C689F471D21673700D9D890 /* SWBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBrowserCell.h; sourceTree = "<group>"; };
+		3C689F481D21673700D9D890 /* SWBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBrowserCell.m; sourceTree = "<group>"; };
+		3C689F491D21673700D9D890 /* SWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWPhotoBrowser.h; sourceTree = "<group>"; };
+		3C689F4A1D21673700D9D890 /* SWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWPhotoBrowser.m; sourceTree = "<group>"; };
+		3C689F4C1D21673700D9D890 /* SWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWPhoto.h; sourceTree = "<group>"; };
+		3C689F4D1D21673700D9D890 /* SWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWPhoto.m; sourceTree = "<group>"; };
+		3C689F4F1D21673700D9D890 /* UIView+SWUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SWUtility.h"; sourceTree = "<group>"; };
+		3C689F501D21673700D9D890 /* UIView+SWUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SWUtility.m"; sourceTree = "<group>"; };
+		3C689F521D21673700D9D890 /* SWImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWImageView.h; sourceTree = "<group>"; };
+		3C689F531D21673700D9D890 /* SWImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWImageView.m; sourceTree = "<group>"; };
+		3C689F541D21673700D9D890 /* UIImageView+imageViewHands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+imageViewHands.h"; sourceTree = "<group>"; };
+		3C689F551D21673700D9D890 /* UIImageView+imageViewHands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+imageViewHands.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,25 +161,6 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		3C2D9F8D1D05649F000EA752 /* SWNicePhotosCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				3C2D9F8E1D05649F000EA752 /* Cell */,
-				3C2D9F911D05649F000EA752 /* SWNicePhotosCollectionView.h */,
-				3C2D9F921D05649F000EA752 /* SWNicePhotosCollectionView.m */,
-			);
-			path = SWNicePhotosCollectionView;
-			sourceTree = "<group>";
-		};
-		3C2D9F8E1D05649F000EA752 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				3C2D9F8F1D05649F000EA752 /* SWCollectionViewImageCell.h */,
-				3C2D9F901D05649F000EA752 /* SWCollectionViewImageCell.m */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		3C2D9F951D0567E4000EA752 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,46 +193,89 @@
 		3C2D9FA21D05680A000EA752 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				3C2D9FA31D0570E3000EA752 /* SWPhotoBrowser */,
-				3C2D9F8D1D05649F000EA752 /* SWNicePhotosCollectionView */,
+				3C689F3E1D21673700D9D890 /* SWCollectionView */,
 				3C2D9F6C1D055D4D000EA752 /* Masonry */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
 		};
-		3C2D9FA31D0570E3000EA752 /* SWPhotoBrowser */ = {
+		3C689F3E1D21673700D9D890 /* SWCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				3C9E33311D0FA91400BDC4A1 /* Category */,
-				3CDF35021D0D527E001B171C /* SWPhoto.h */,
-				3CDF35031D0D527E001B171C /* SWPhoto.m */,
-				3CDF34FF1D0D502E001B171C /* SWPhotoBrowser.h */,
-				3CDF35001D0D502E001B171C /* SWPhotoBrowser.m */,
-				3CDF35081D0D69DE001B171C /* SWBrowserCell.h */,
-				3CDF35091D0D69DE001B171C /* SWBrowserCell.m */,
-				3C8E84431D1B7FFB0012CCB5 /* SWImageView.h */,
-				3C8E84441D1B7FFB0012CCB5 /* SWImageView.m */,
+				3C689F3F1D21673700D9D890 /* SWNicePhotosCollectionView */,
+				3C689F451D21673700D9D890 /* SWPhotoBrowser */,
+			);
+			path = SWCollectionView;
+			sourceTree = "<group>";
+		};
+		3C689F3F1D21673700D9D890 /* SWNicePhotosCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3C689F401D21673700D9D890 /* Cell */,
+				3C689F431D21673700D9D890 /* SWNicePhotosCollectionView.h */,
+				3C689F441D21673700D9D890 /* SWNicePhotosCollectionView.m */,
+			);
+			path = SWNicePhotosCollectionView;
+			sourceTree = "<group>";
+		};
+		3C689F401D21673700D9D890 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3C689F411D21673700D9D890 /* SWCollectionViewImageCell.h */,
+				3C689F421D21673700D9D890 /* SWCollectionViewImageCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3C689F451D21673700D9D890 /* SWPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				3C689F461D21673700D9D890 /* Browser */,
+				3C689F4B1D21673700D9D890 /* Model */,
+				3C689F4E1D21673700D9D890 /* SWFrame */,
+				3C689F511D21673700D9D890 /* SWImageView */,
+				3C689F541D21673700D9D890 /* UIImageView+imageViewHands.h */,
+				3C689F551D21673700D9D890 /* UIImageView+imageViewHands.m */,
 			);
 			path = SWPhotoBrowser;
 			sourceTree = "<group>";
 		};
-		3C751E041D193D6400D43F21 /* SWFrame */ = {
+		3C689F461D21673700D9D890 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
-				3C751E051D193D6400D43F21 /* UIView+SWUtility.h */,
-				3C751E061D193D6400D43F21 /* UIView+SWUtility.m */,
+				3C689F471D21673700D9D890 /* SWBrowserCell.h */,
+				3C689F481D21673700D9D890 /* SWBrowserCell.m */,
+				3C689F491D21673700D9D890 /* SWPhotoBrowser.h */,
+				3C689F4A1D21673700D9D890 /* SWPhotoBrowser.m */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		3C689F4B1D21673700D9D890 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C689F4C1D21673700D9D890 /* SWPhoto.h */,
+				3C689F4D1D21673700D9D890 /* SWPhoto.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C689F4E1D21673700D9D890 /* SWFrame */ = {
+			isa = PBXGroup;
+			children = (
+				3C689F4F1D21673700D9D890 /* UIView+SWUtility.h */,
+				3C689F501D21673700D9D890 /* UIView+SWUtility.m */,
 			);
 			path = SWFrame;
 			sourceTree = "<group>";
 		};
-		3C9E33311D0FA91400BDC4A1 /* Category */ = {
+		3C689F511D21673700D9D890 /* SWImageView */ = {
 			isa = PBXGroup;
 			children = (
-				3C751E041D193D6400D43F21 /* SWFrame */,
-				3C9D10B51D20CC08009F6321 /* UIImageView+imageViewHands.h */,
-				3C9D10B61D20CC08009F6321 /* UIImageView+imageViewHands.m */,
+				3C689F521D21673700D9D890 /* SWImageView.h */,
+				3C689F531D21673700D9D890 /* SWImageView.m */,
 			);
-			name = Category;
+			path = SWImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,25 +349,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C2D9F931D05649F000EA752 /* SWCollectionViewImageCell.m in Sources */,
-				3CDF350A1D0D69DE001B171C /* SWBrowserCell.m in Sources */,
-				3C8E84451D1B7FFB0012CCB5 /* SWImageView.m in Sources */,
-				3C2D9F941D05649F000EA752 /* SWNicePhotosCollectionView.m in Sources */,
 				3C2D9F851D055D4D000EA752 /* MASConstraint.m in Sources */,
 				3C2D9F881D055D4D000EA752 /* MASViewAttribute.m in Sources */,
+				3C689F581D21673700D9D890 /* SWBrowserCell.m in Sources */,
+				3C689F591D21673700D9D890 /* SWPhotoBrowser.m in Sources */,
 				3C2D9F8A1D055D4D000EA752 /* NSArray+MASAdditions.m in Sources */,
 				3C2D9F891D055D4D000EA752 /* MASViewConstraint.m in Sources */,
+				3C689F561D21673700D9D890 /* SWCollectionViewImageCell.m in Sources */,
 				3C2D9F9F1D0567E4000EA752 /* SecViewController.m in Sources */,
 				3C2D9F871D055D4D000EA752 /* MASLayoutConstraint.m in Sources */,
+				3C689F5B1D21673700D9D890 /* UIView+SWUtility.m in Sources */,
+				3C689F5C1D21673700D9D890 /* SWImageView.m in Sources */,
 				3C2D9F9E1D0567E4000EA752 /* AppDelegate.m in Sources */,
 				3C2D9F8C1D055D4D000EA752 /* View+MASAdditions.m in Sources */,
+				3C689F5A1D21673700D9D890 /* SWPhoto.m in Sources */,
 				3C2D9F841D055D4D000EA752 /* MASCompositeConstraint.m in Sources */,
-				3C9D10B71D20CC08009F6321 /* UIImageView+imageViewHands.m in Sources */,
-				3C751E071D193D6400D43F21 /* UIView+SWUtility.m in Sources */,
-				3CDF35041D0D527E001B171C /* SWPhoto.m in Sources */,
+				3C689F571D21673700D9D890 /* SWNicePhotosCollectionView.m in Sources */,
 				3C2D9F8B1D055D4D000EA752 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				3C2D9F861D055D4D000EA752 /* MASConstraintMaker.m in Sources */,
-				3CDF35011D0D502E001B171C /* SWPhotoBrowser.m in Sources */,
+				3C689F5D1D21673700D9D890 /* UIImageView+imageViewHands.m in Sources */,
 				3C2D9F4B1D05544C000EA752 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

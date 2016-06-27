@@ -19,11 +19,8 @@
     if (self = [super initWithFrame:frame]) {
         
         [self addSubview:self.imageView];
-        [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(self);
-        }];
         
-        self.imageView.frame = self.frame;
+        self.imageView.frame = self.bounds;
         
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
         self.imageView.clipsToBounds = YES;

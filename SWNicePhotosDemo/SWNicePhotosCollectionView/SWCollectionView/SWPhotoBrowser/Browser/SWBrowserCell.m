@@ -38,7 +38,7 @@
     return cell;
 }
 
-#pragma mark - 手势
+#pragma mark - 手势scImageView.imageViewDelegate
 
 -(void)imageViewDidTap:(UIImageView *)imageView{
     
@@ -54,5 +54,9 @@
 
 }
 
+-(void)imageDidFinishSaveToAlbum:(UIImage *)image
+{
+    
+}
 
 @end

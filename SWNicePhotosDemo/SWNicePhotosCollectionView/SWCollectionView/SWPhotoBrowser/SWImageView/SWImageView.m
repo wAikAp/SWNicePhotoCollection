@@ -7,12 +7,10 @@
 //
 
 #import "SWImageView.h"
-
 #import "SWPhoto.h"
 
 #import "UIView+SWUtility.h"
 #import "UIImageView+imageViewHands.h"
-#import "Masonry.h"
 
 
 @interface SWImageView() <UIActionSheetDelegate , UIImagePickerControllerDelegate>
