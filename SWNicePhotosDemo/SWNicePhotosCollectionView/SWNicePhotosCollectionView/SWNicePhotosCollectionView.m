@@ -9,6 +9,14 @@
 #import "SWNicePhotosCollectionView.h"
 #import "SWCollectionViewImageCell.h"
 
+//第三方库
+#import "MJPhoto.h"
+#import "MJPhotoBrowser.h"
+#import "Masonry.h"
+
+#import "SWPhoto.h"
+#import "SWPhotoBrowser.h"
+#import "SWNicePhotosCollectionView.h"
 
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -82,7 +90,7 @@ NSInteger maxColmun = 3;//最大行/列数
     
     if (count == 1) {
         
-        CGSize size = CGSizeMake(180, 120);
+        CGSize size = CGSizeMake(WIDTH / 2 , HEIGHT / 5);
         
         self.flowLayOut.itemSize = size;
         self.flowLayOut.minimumLineSpacing = 0;
@@ -108,14 +116,13 @@ NSInteger maxColmun = 3;//最大行/列数
     
     CGFloat height  = row * cellWh + (row - 1) * cellMargin + 5;
     //整个pictureView的大小
-    
     //    NSLog(@"count = %ld\n cloumn = %ld\n  row = %ld\n  height = %f\n  width = %f\n  cellMArgin = %f",count , cloumn ,row ,height ,width ,cellMargin);
     return CGSizeMake(width, height);
 }
 
 #pragma mark - DataScore
 
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.imageArray.count;
 }
@@ -127,9 +134,37 @@ NSInteger maxColmun = 3;//最大行/列数
     return cell;
 }
 
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - delegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%d",indexPath.row);
+//
+    NSMutableArray *photoArr = [NSMutableArray array];
+
+    for (int i = 0; i < self.imageArray.count; ++i) {
+        //创建photo
+        SWPhoto *photo = [[SWPhoto alloc]init];
+        //设置图片
+        photo.image = self.imageArray[i];
+        //来源哪里 每个图片i++ 不然直接用indexPath就永远都只来源于1个
+        NSIndexPath *index_Path = [NSIndexPath indexPathForItem:i inSection:0];
+        SWCollectionViewImageCell *cell = (SWCollectionViewImageCell *)[collectionView cellForItemAtIndexPath:index_Path];
+        photo.srcImageView = cell.imageView;
+        
+        [photoArr addObject:photo];
+    }
+    //图片浏览器
+    SWPhotoBrowser *pbrowser = [[SWPhotoBrowser alloc]init];
+    pbrowser.photos = photoArr;
+    pbrowser.currentPhotoIndex = indexPath.item;
+    pbrowser.showItemType = typePageControl;//底部显示第几张的类型
+    [pbrowser show];//显示完后 变成以显示
+//    SWPhotoBrowserViewController *browserVc =[[SWPhotoBrowserViewController alloc]init];
+//    browserVc.photos = photoArr;
+//    browserVc.currentPhotoIndex = indexPath.item;
+//    browserVc.showItemType = typePageControl;
+//    [browserVc show];
+//    self pre
+    
 }
 
 

@@ -22,8 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationController setNavigationBarHidden:YES];
-    
     //图片数组
     NSMutableArray *imageArr = [NSMutableArray array];
     for (int i = 0; i < 9; ++i) {
