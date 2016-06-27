@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SWPhotoBrowserViewController.h"
 
 /**
  *  显示label 还是pageControl 默认pageControl

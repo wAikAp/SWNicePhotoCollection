@@ -10,13 +10,10 @@
 #import "SWCollectionViewImageCell.h"
 
 //第三方库
-#import "MJPhoto.h"
-#import "MJPhotoBrowser.h"
 #import "Masonry.h"
 
 #import "SWPhoto.h"
 #import "SWPhotoBrowser.h"
-#import "SWNicePhotosCollectionView.h"
 
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
